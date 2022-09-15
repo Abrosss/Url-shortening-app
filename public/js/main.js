@@ -25,7 +25,7 @@ const links = results.childNodes
    
     if (!currentUrl.includes(data.url)) {
       currentUrl.push(data.url)
-      await removeThirdList()
+      // await removeThirdList()
       getLinksData(data.url)
       input.classList.remove('warning')
       
@@ -79,6 +79,7 @@ const links = results.childNodes
       document.querySelector("#error").innerText=''
       const res = await response.json();
       displayShortLink(res.result)
+      updateAndRemoveCurrentUrlAndList()
     } 
     
    
@@ -127,7 +128,17 @@ const links = results.childNodes
     document.querySelector("#error").innerText = 'Please add a valid link'
   }
   
+  function updateAndRemoveCurrentUrlAndList() {
+    let allList = document.querySelectorAll("#results li");
     
+    let allListArr = Array.from(allList);
+  
+    let parent = document.querySelector("#results");
+    if (allListArr.length > 3) {
+      parent.removeChild(allListArr[3]);
+      currentUrl.splice(0, 1);
+    }
+  }
 })();
 
 //burger menu
