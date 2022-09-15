@@ -22,9 +22,6 @@ Users should be able to:
 - CSS 
 - JAVASCRIPT
 
-### Continued development
-
-Right now whenever a user submits a valid link they get a short link in a container below, those links go down the page. I would like to limit them? For example limit to 3, so submitting a new link will remove the last link in the container and so on, to make it seem like a loop, to make old links disappear. So I want to solve this endless container going down the page. 
 
 ## Author
 
