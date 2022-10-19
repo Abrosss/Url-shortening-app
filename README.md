@@ -14,7 +14,7 @@ Users should be able to:
 - Solution URL: [Solution](https://www.frontendmentor.io/solutions/shortly-api-shorten-urls-PfWGE4vKyZ)
 - Live Site URL: [LIVE](https://magic-url-shortener.netlify.app/)
 
-![](./public/assets/coffee.jpg)
+![](./url.png)
 
 ### Built with
 
